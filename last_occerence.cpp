@@ -11,8 +11,8 @@ int solve(int ara[], int n,int item){
             answer = mid ;
             l = mid+1 ;
         }
-        if(ara[mid] < item ) l = mid+1 ;
-        else r = mid-1;
+        if(ara[mid] < item ) r = mid-1 ;
+        else l = mid+1;
     }
 
     return answer;
